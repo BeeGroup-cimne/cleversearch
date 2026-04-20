@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "CleverSearch",
+  "description": "AI-powered email query and analysis tool — part of the ThunderClass project.",
+  "version": "1.0.0",
+  "author": "Gerard Mor Martinez and David Blanco Bautista",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cleversearch@thunderclass.project",
+      "strict_min_version": "128.0"
+    }
+  },
+  "permissions": [
+    "messagesRead",
+    "accountsRead",
+    "accountsFolders",
+    "menus",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "message_display_action": {
+    "default_title": "CleverSearch",
+    "default_icon": {
+      "16": "icon-16.png",
+      "32": "icon-32.png"
+    },
+    "default_popup": "popup/popup.html"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "64": "icon-64.png"
+  }
+}
